@@ -1,0 +1,25 @@
+.swiper-slide img {
+    opacity: 1;
+    transition: 0.3s;
+  }
+  
+ .swiper-slide img:hover {
+    opacity: 1;
+  }
+  
+ .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+ .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid rgb(109, 171, 45);
+  }
+  
+ .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: rgb(109, 171, 45);
+  }

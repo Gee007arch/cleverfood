@@ -1,0 +1,176 @@
+/* styles.css */
+.bg-image {
+    background:linear-gradient(rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url('http://localhost:3000/img/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+/* bachroung image slider */
+.bg-slideshow {
+    background:linear-gradient(rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url('http://localhost:3000/img/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+
+
+    background-repeat: no-repeat;
+    transition: 1s;
+    transition: all ease-in-out linear;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+  }
+@keyframes animate {
+  0% {
+    background-image: linear-gradient(rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url('http://localhost:3000/img/bg3.png');
+  }
+  20% {
+    background-image: linear-gradient(rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url('http://localhost:3000/img/bg4.jpg');
+  }
+  40% {
+    background-image: linear-gradient(rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url('http://localhost:3000/img/bg5.jpg');
+  }
+  60% {
+    background-image: linear-gradient(rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url('http://localhost:3000/img/bg6.jpg');
+  }
+  80% {
+    background-image: linear-gradient(rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url('http://localhost:3000/img/bg7.jpg');
+  }
+  100% {
+    background-image: linear-gradient(rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url('http://localhost:3000/img/bg1.jpg');
+  }
+}
+/* @media (max-width: 760px) {
+  .bg-slideshow{
+    width: fit-content;
+  }
+} */
+
+
+
+.bg-image2 {
+    background:linear-gradient(rgb(109, 171, 45,0.7),rgb(109, 171, 45,0.7)), url('http://localhost:3000/img/bg2.jpg');
+    background-size: 170%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+  .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+
+  /* Carousel.css */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: none;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
